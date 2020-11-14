@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{algpseudocode,algorithm}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{psfrag,color}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{amssymb}
+
+\setlength{\topmargin}{-0.7in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\textheight}{10.0in}
+\setlength{\parindent}{0in}
+
+\renewcommand\arraystretch{2.4}
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\problem}[1]{ \medskip \pp $\underline{\rm Problem\ #1}$\\ }
+
+\pagestyle{empty}
+
+\def\pp{\par\noindent}
+
+\begin{document}
+
+
+\begin{flushleft}
+CSOR W4246--Fall, 2020 \\
+Name: \\
+UNI: \\
+\end{flushleft}
+
+\centerline{\bf Homework 1 Theoretical Solutions (150 points)}
+
+\bigskip 
+\bigskip
+
+
+\begin{enumerate}
+\item {\bf Solution to Problem 1}
+
+(Lu Bin Liu's example pseudocode from piazza)
+
+\begin{algorithm}
+\caption{Algorithm}\label{alg:Algo}
+\begin{algorithmic}[h!]
+\Procedure{Function}{$X$,$Y$}\Comment{Insert Comments}
+   \State Initialize $Z$
+   \While {condition}
+    \For{condition}
+			\State do something
+    \EndFor
+   \If{condition}
+  \State do something
+ \Else
+  \State do something else
+ \EndIf
+   \EndWhile
+   \State \textbf{return} $Z$ 
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\bigskip
+\item 
+\begin{enumerate}
+\item
+\item 
+\end{enumerate}
+
+
+
+\renewcommand\arraystretch{1.0}
+
+\newpage
+\item(25 points) In the table below, indicate the relationship between functions $f$ and $g$ 
+for each pair $(f, g)$  by writing  ``yes" or ``no"  in each box. For example, 
+if $f=O(g)$ then write ``yes"  in the first box. Here $\log^b{x} = (\log_2{x})^b$.
+
+\renewcommand\arraystretch{1.5}
+
+\bigskip
+\begin{table}[tbh]  
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline  % \label{tab: less}
+$f$ & $g$ & \ \ $O$ \ \  & \ \  $o$ \ \   &  \ \ $\Omega$ \ \  &  \ \ $\omega$ \ \ & \ \ $\Theta$  \ \ \\ \hline
+$6n\log^2{n}$ & $n^2\log{n}$  &  &  &    &  & \\ \hline
+$\sqrt{ \log{n} }$ & $(\log{ \log{n}})^3$  &  &  &    &  & \\ \hline
+$10n \log{n}$ & $n\log{(10n^2)}$  &  &  &    &  & \\ \hline
+$n^{4/5}$ & $\sqrt{n}\log{n}$  &  &  &    &  & \\ \hline
+$5\sqrt{n} + \log^2{n}$ & $3\sqrt{n}$  &  &   &       & &     \\ \hline
+$\frac{3^n}{n^3}$ & $n^3 2^n$  &  &  &    &  & \\ \hline
+$\sqrt{n} 2^n$ & $2^{n/2+\log{n}}$  &  &  &    &  & \\ \hline
+$n \log{(2n)}$ & $\frac{n^2}{\log{n} }$  &  &  &    &  & \\ \hline
+$n!$ & $n^n$  &  &  &    &  & \\ \hline
+$\log{n!}$ & $\log{(n^{n/2})}$  &  &  &    &  & \\ \hline
+\end{tabular}
+\end{center}
+\end{table} 
+
+\renewcommand\arraystretch{1.0}
+
+
+\bigskip
+\item 
+\begin{enumerate}
+\item 
+\item 
+\begin{itemize}
+\item[i)] 
+\item[ii)] 
+\item[iii)] 
+\item[iv)] 
+\end{itemize}
+\end{enumerate} 
+
+
+\bigskip 
+\item
+\begin{enumerate}
+\item  
+\item  
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+
